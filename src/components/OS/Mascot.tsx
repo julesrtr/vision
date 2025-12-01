@@ -33,7 +33,7 @@ export default function Mascot() {
   }, []);
 
   // Calculate Pupil Position
-  const getPupilStyle = (eyeRef: React.RefObject<HTMLDivElement>) => {
+  const getPupilStyle = (eyeRef: React.RefObject<HTMLDivElement | null>) => {
     if (!eyeRef.current) return {};
 
     const eyeRect = eyeRef.current.getBoundingClientRect();
