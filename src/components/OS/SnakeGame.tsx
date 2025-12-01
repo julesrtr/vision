@@ -24,7 +24,7 @@ export default function SnakeGame({ onWin }: SnakeGameProps) {
 
   // Generate random food
   const spawnFood = useCallback(() => {
-    let newX, newY;
+    let newX: number, newY: number; // Add ': number' here
     let isCollision;
     
     do {
