@@ -76,7 +76,6 @@ export default function Window({
   return (
     <AnimatePresence>
       {!isMinimized && (
-         // @ts-expect-error - Draggable typings vs Div mismatch
         <DraggableWrapper {...draggableProps}>
           <motion.div 
             ref={nodeRef}
